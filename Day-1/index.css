@@ -1,0 +1,25 @@
+form{
+    /* display: flex; */
+    /* background-color: #84848c; */
+    background: linear-gradient(-45deg, #45caff 0%, #ff1b6b 100%);
+    height: max-content;
+    width: max-content;
+    /* justify-content: space-around; */
+    padding: 2rem;
+    margin: 5rem auto;
+    border-radius: 10px;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+}
+/* label,input{
+    margin-top: 1rem;
+}
+.login{
+    color: wheat;
+}
+body{
+    background-color: black !important;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }

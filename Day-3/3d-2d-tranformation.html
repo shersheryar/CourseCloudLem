@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: transform 3s;
+      }
+
+      #div1 {
+        transition-timing-function: linear;
+        transition-delay: 1s;
+      }
+      #div2 {
+        transition-timing-function: ease;
+      }
+      #div3 {
+        transition-timing-function: ease-in;
+      }
+      #div4 {
+        transition-timing-function: ease-out;
+      }
+      #div5 {
+        transition-timing-function: ease-in-out;
+      }
+
+      div:hover {
+        width: 300px;
+        /* transform: rotate(40deg); */
+
+        /* transform: translate3d(100px, -100px, -100px); */
+      }
+      #div1:hover {
+        /* transform: matrix3d(3px, 4px, 30px, -20px, -3px, 1rem); */
+        background-color: aquamarine;
+        transform: rotate(180deg);
+        border-radius: 10px;
+      }
+      #div2:hover {
+        /* transform: matrix3d(3px, 4px, 30px, -20px, -3px, 1rem); */
+        background-color: rgb(255, 178, 127);
+        /* transform: translate3d(100px, 33px, 4px); */
+        transform: skew(5deg, 10deg);
+      }
+      #div3:hover {
+        /* transform: matrix3d(3px, 4px, 30px, -20px, -3px, 1rem); */
+        background-color: rgb(127, 255, 133);
+        /* transform: translate3d(100px, 33px, 4px); */
+        transform: scale(2, 3);
+      }
+      #div4:hover {
+        /* transform: matrix3d(3px, 4px, 30px, -20px, -3px, 1rem); */
+        background-color: rgb(47, 71, 48);
+        /* transform: translate3d(100px, 33px, 4px); */
+        transform: rotate(-180deg);
+      }
+      #div5:hover {
+        /* transform: matrix3d(3px, 4px, 30px, -20px, -3px, 1rem); */
+        background-color: rgb(47, 71, 48);
+        /* transform: translate3d(100px, 33px, 4px); */
+        transform: rotate(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The transition-timing-function Property</h1>
+
+    <p>Hover over the div elements below, to see the different speed curves:</p>
+
+    <div id="div1">linear</div>
+    <br />
+    <div id="div2">ease</div>
+    <br />
+    <div id="div3">ease-in</div>
+    <br />
+    <div id="div4">ease-out</div>
+    <br />
+    <div id="div5">ease-in-out</div>
+    <br />
+  </body>
+</html>

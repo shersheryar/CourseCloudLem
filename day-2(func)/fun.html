@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions</title>
+  </head>
+  <body>
+    <form action="" method="get"></form>
+    <div>
+
+      <h1>Javascript functions</h1>
+
+      <p>multiplying three numbers 3*4*5</p>
+      <p id="result"></p>
+      <hr />
+      <p>printing my name</p>
+      <button onclick="myName()">click here to see my name</button>
+      <p id="name"></p>
+    </div>
+  </body>
+
+  <script>
+    function mult(x, y, z) {
+      return x * y * z;
+    }
+
+    let result = mult(3, 4, 5);
+    document.getElementById("result").innerHTML = result;
+
+    function myName(fname = "Sheryar", lname = "Sher") {
+      let fullName = fname + " " + lname;
+      document.getElementById("name").innerText = fullName;
+    }
+    // let fullName = myName("Sheryar", "Sher");
+    // console.log(fullName);
+  </script>
+</html>
